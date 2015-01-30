@@ -1,7 +1,21 @@
 class SpaceRemover{
     public static void main(String[] args){
-        int[] temp = new int[5];
+        String mostFamous = "Rudolph the Red-Nosed Reindeer";
+        char[] mfl = mostFamous.toCharArray();
         
-        temp[0] = 4;
+        for(int dex=0; dex < mfl.length; dex++)
+        {
+            char current = mfl[dex];
+            
+            if(current != ' ')
+            {
+                System.out.print(current);
+            }
+            else
+            {
+                System.out.print('.');
+            }
+        }
+        System.out.println();
     }
 }
